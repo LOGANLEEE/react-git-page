@@ -1,0 +1,11 @@
+endpoint: https://us1.prisma.sh/logan-lee-b7d6dd/react-node/dev
+# WS:    wss://us1.prisma.sh/logan-lee-b7d6dd/react-node/dev
+datamodel: datamodel.prisma
+
+generate:
+    - generator: javascript-client
+      output: ../src/generated/prisma-client
+
+hooks:
+    post-deploy:
+        - prisma generate

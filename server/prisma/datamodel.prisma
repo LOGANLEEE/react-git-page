@@ -1,0 +1,18 @@
+# SDL
+
+type Link {
+    id: ID! @unique
+    createdAt: DateTime!
+    description: String!
+    url: String!
+    postBy: User
+}
+#  One to Many Link to User
+
+type User {
+    id: ID! @unique
+    name: String!
+    email: String! @unique
+    password: String!
+    links: [Link!]!
+}

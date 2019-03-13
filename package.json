@@ -1,12 +1,29 @@
 {
-    "name": "react-git-page",
+    "name": "movie-viewer",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://LOGANLEEE.github.io/react-git-page",
     "dependencies": {
+        "axios": "^0.18.0",
         "gh-pages": "^2.0.1",
-        "react": "^16.8.4",
-        "react-dom": "^16.8.4",
-        "react-scripts": "2.1.8"
+        "graphql-yoga": "^1.17.4",
+        "nodemon": "^1.18.10",
+        "primeicons": "^1.0.0",
+        "primereact": "^3.1.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.2",
+        "react-apollo": "^2.4.1",
+        "react-circular-progressbar": "^1.0.0",
+        "react-dom": "^16.8.2",
+        "react-redux": "^5.1.1",
+        "react-router-dom": "^4.3.1",
+        "react-scripts": "2.1.5",
+        "react-spinners": "^0.5.1",
+        "redux": "^4.0.1",
+        "redux-devtools": "^3.5.0",
+        "redux-saga": "^0.16.2",
+        "socket.io": "^2.2.0",
+        "styled-components": "^4.1.3"
     },
     "scripts": {
         "start": "react-scripts start",
