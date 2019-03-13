@@ -20,40 +20,40 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/js/2.a85d9d33.chunk.js"
   },
   {
-    "revision": "76b56857ebbae3a5a689f213feb11af0",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-300.76b56857.eot"
-  },
-  {
     "revision": "60c866748ff15f5b347fdba64596b1b1",
     "url": "/react-git-page/static/media/open-sans-v15-latin-300.60c86674.woff2"
   },
   {
-    "revision": "cffb686d7d2f4682df8342bd4d276e09",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-regular.cffb686d.woff2"
+    "revision": "76b56857ebbae3a5a689f213feb11af0",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-300.76b56857.eot"
   },
   {
     "revision": "9dce7f01715340861bdb57318e2f3fdc",
     "url": "/react-git-page/static/media/open-sans-v15-latin-regular.9dce7f01.eot"
   },
   {
-    "revision": "d08c09f2f169f4a6edbcf8b8d1636cb4",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-700.d08c09f2.woff2"
+    "revision": "cffb686d7d2f4682df8342bd4d276e09",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-regular.cffb686d.woff2"
   },
   {
     "revision": "148a6749baa5f658a45183ddb5ee159f",
     "url": "/react-git-page/static/media/open-sans-v15-latin-700.148a6749.eot"
   },
   {
+    "revision": "d08c09f2f169f4a6edbcf8b8d1636cb4",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-700.d08c09f2.woff2"
+  },
+  {
     "revision": "521d17bc9f3526c690e8ada6eee55bec",
     "url": "/react-git-page/static/media/open-sans-v15-latin-300.521d17bc.woff"
   },
   {
-    "revision": "bf2d0783515b7d75c35bde69e01b3135",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-regular.bf2d0783.woff"
-  },
-  {
     "revision": "623e3205570002af47fc2b88f9335d19",
     "url": "/react-git-page/static/media/open-sans-v15-latin-700.623e3205.woff"
+  },
+  {
+    "revision": "bf2d0783515b7d75c35bde69e01b3135",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-regular.bf2d0783.woff"
   },
   {
     "revision": "177cc92d2e8027712a8c1724abd272cd",
@@ -92,12 +92,12 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/media/primeicons.b8eccb10.eot"
   },
   {
-    "revision": "71bb3d79dcf18b45ae845409e7c2ada3",
-    "url": "/react-git-page/static/media/primeicons.71bb3d79.woff"
-  },
-  {
     "revision": "473e2a746d3c151d7dcaa626a7c84c60",
     "url": "/react-git-page/static/media/primeicons.473e2a74.ttf"
+  },
+  {
+    "revision": "71bb3d79dcf18b45ae845409e7c2ada3",
+    "url": "/react-git-page/static/media/primeicons.71bb3d79.woff"
   },
   {
     "revision": "38d77552b0353684a208177482d5b6ee",
