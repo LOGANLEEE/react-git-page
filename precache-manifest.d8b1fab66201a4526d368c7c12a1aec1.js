@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/js/2.a85d9d33.chunk.js"
   },
   {
-    "revision": "76b56857ebbae3a5a689f213feb11af0",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-300.76b56857.eot"
-  },
-  {
     "revision": "60c866748ff15f5b347fdba64596b1b1",
     "url": "/react-git-page/static/media/open-sans-v15-latin-300.60c86674.woff2"
+  },
+  {
+    "revision": "76b56857ebbae3a5a689f213feb11af0",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-300.76b56857.eot"
   },
   {
     "revision": "cffb686d7d2f4682df8342bd4d276e09",
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/media/open-sans-v15-latin-regular.9dce7f01.eot"
   },
   {
-    "revision": "148a6749baa5f658a45183ddb5ee159f",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-700.148a6749.eot"
-  },
-  {
     "revision": "d08c09f2f169f4a6edbcf8b8d1636cb4",
     "url": "/react-git-page/static/media/open-sans-v15-latin-700.d08c09f2.woff2"
+  },
+  {
+    "revision": "148a6749baa5f658a45183ddb5ee159f",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-700.148a6749.eot"
   },
   {
     "revision": "521d17bc9f3526c690e8ada6eee55bec",
@@ -52,12 +52,12 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/media/open-sans-v15-latin-regular.bf2d0783.woff"
   },
   {
-    "revision": "623e3205570002af47fc2b88f9335d19",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-700.623e3205.woff"
-  },
-  {
     "revision": "177cc92d2e8027712a8c1724abd272cd",
     "url": "/react-git-page/static/media/open-sans-v15-latin-300.177cc92d.ttf"
+  },
+  {
+    "revision": "623e3205570002af47fc2b88f9335d19",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-700.623e3205.woff"
   },
   {
     "revision": "c045b73d86803686f4cd1cc3f9ceba59",
