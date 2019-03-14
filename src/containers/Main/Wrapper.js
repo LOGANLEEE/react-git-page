@@ -17,6 +17,10 @@ const Wrapper = styled.div`
         grid-row: 1;
     }
     .item2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .item3 {
         grid-column: 1;
         grid-row: 2;
     }

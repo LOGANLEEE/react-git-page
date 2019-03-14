@@ -11,6 +11,9 @@ const Main = () => (
         <NavLink to='/shopping' className='item2'>
             <div>Shopping</div>
         </NavLink>
+        <NavLink className='item3' to='/graphql'>
+            <div>GraphQL</div>
+        </NavLink>
     </Wrapper>
 );
 
