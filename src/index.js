@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Prism from 'prismjs';
 
+import './styles/prism.css';
 import './styles/index.css';
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
 import * as serviceWorker from './serviceWorker';
-import store from 'store';
-import Root from 'Root';
+import store from './store';
+import Root from './Root';
 
 ReactDOM.render(<Root store={store} />, document.getElementById('root'));
 

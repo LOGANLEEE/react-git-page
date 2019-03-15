@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter, NavLink, Route } from 'react-router-dom';
+import { BrowserRouter as Route, NavLink } from 'react-router-dom';
 
-import tutorial1 from '../../components/GraphqlDocPage/tutorial1';
 import Wrapper from './Wrapper';
 
 const GraphQLDoc = () => (
     <Wrapper>
-        <BrowserRouter basename='/graphql' />
-        <NavLink to='/tutorial-1'>
+        <NavLink to='/graphql/tutorial-1'>
             <div>tutorial-1</div>
         </NavLink>
-        <Route exact path='/tutorial-1' component={tutorial1} />
+        <NavLink to='/graphql/tutorial-2'>
+            <div>tutorial-2</div>
+        </NavLink>
     </Wrapper>
 );
 
