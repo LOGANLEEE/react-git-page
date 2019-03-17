@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6daa2c2ea6d78fd1cbab",
+    "revision": "1a2e7cd8260c3918d727",
     "url": "/react-git-page/static/css/main.573ab81a.chunk.css"
   },
   {
-    "revision": "6daa2c2ea6d78fd1cbab",
-    "url": "/react-git-page/static/js/main.6daa2c2e.chunk.js"
+    "revision": "1a2e7cd8260c3918d727",
+    "url": "/react-git-page/static/js/main.1a2e7cd8.chunk.js"
   },
   {
     "revision": "d066d5f166b0e1c0b57e",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/media/open-sans-v15-latin-300.60c86674.woff2"
   },
   {
-    "revision": "9dce7f01715340861bdb57318e2f3fdc",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-regular.9dce7f01.eot"
-  },
-  {
     "revision": "cffb686d7d2f4682df8342bd4d276e09",
     "url": "/react-git-page/static/media/open-sans-v15-latin-regular.cffb686d.woff2"
+  },
+  {
+    "revision": "9dce7f01715340861bdb57318e2f3fdc",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-regular.9dce7f01.eot"
   },
   {
     "revision": "148a6749baa5f658a45183ddb5ee159f",
@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/media/open-sans-v15-latin-300.177cc92d.ttf"
   },
   {
-    "revision": "7e08cc656863d52bcb5cd34805ac605b",
-    "url": "/react-git-page/static/media/open-sans-v15-latin-700.7e08cc65.ttf"
-  },
-  {
     "revision": "c045b73d86803686f4cd1cc3f9ceba59",
     "url": "/react-git-page/static/media/open-sans-v15-latin-regular.c045b73d.ttf"
+  },
+  {
+    "revision": "7e08cc656863d52bcb5cd34805ac605b",
+    "url": "/react-git-page/static/media/open-sans-v15-latin-700.7e08cc65.ttf"
   },
   {
     "revision": "7aab4c13671282c90669eb6a10357e41",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/media/avengers2.6b3ed490.png"
   },
   {
-    "revision": "1f311ac82de99d430d314c4ecb6188a4",
+    "revision": "559a85cf26458242c2bb709579d7cf21",
     "url": "/react-git-page/index.html"
   }
 ];
