@@ -1,58 +1,69 @@
 import React from 'react';
 import Highlight from 'react-highlight';
+
+import s1 from './images/1.png';
+import s2 from './images/2.png';
 import Wrapper from './Wrapper';
 
 const template = () => (
     <Wrapper>
         <div>
             <h3>실습1</h3>
-            <p>
-                자, 이제 이론보다는 키보드에 손가락을 한번 올려봅시다. <br />
-                우선 늘 그렇듯이 프로젝트를 생성해줍니다.
-            </p>
+            <div className='para'>
+                자, 그럼 이제 백문이불여일견이라고! <br />
+                이론보다는 키보드에 손가락을 한번 올려봅시다. <br />
+                바닥부터 시작해봅시다. :D
+            </div>
 
             <Highlight className='js'>
                 {`
                     mkdir nodeQL
                     cd nodeQL
+                    //1
                     yarn init -y
 
                     $ nodeQL/package.json
-                    // 1
-                    "main": "src/index.js",
                     // 2
+                    "main": "src/index.js",
+                    // 3
                     "scripts": {
                         "start": "nodemon"
                         }
                 `}
             </Highlight>
             <div>
-                <p>
-                    패키지 관리자로는 npm 보다는 yarn을 선호하는 편이므로 yarn을
-                    사용합니다.
+                <div className='para'>
+                    필자는 패키지 관리자로써는 'npm' 보다는 'yarn'을 더 선호하는
+                    편이므로 yarn을 사용합니다.
                     <br />
-                    물론 희망한다면 npm을 사용하셔도 전혀 문제가 되지않습니다.
+                    하지만 독자의 취향대로 npm을 사용하셔도 무방합니다.
                     <br />
-                    우리는 방금 <b>nodeQL</b>이라는 폴더를 만들었고, yarn으로
+                    <br />
+                    1. 우리는 방금 <b>nodeQL</b>이라는 폴더를 만들었고, yarn으로
                     프로젝트를 초기화했습니다.
                     <br />이 nodeQL이란 이름은 사용자가 정하기 나름이니,
                     부담갖지마시고 편하신대로 작성해주세요.
                     <br />
                     마지막으로 생성된 package.json을 수정해주세요!
                     <br />
-                    1. src/index.js를 메인으로 설정하겠다는 의미입니다. <br />
-                    자바의 main()과 유사하게 생각하시면 편하실듯합니다.
                     <br />
-                    2. nodemon을 이용할겁니다. Spring에 Devtools같은
-                    라이브러리입니다. <br />
-                </p>
+                    2. src/index.js를 메인(엔트리 포인트)으로 설정하겠다는
+                    의미입니다. <br />
+                    자바의 main메소드와 유사하게 엔트리 포인트라고 생각해주세요.
+                    <br />
+                    <br />
+                    3. node말고 nodemon을 이용합니다. SpringBoot에서
+                    Devtools같이 라이브러리입니다.
+                    <br />
+                    소스가 변경되면 자동으로 감지해 서버를 재시작해줍니다.
+                </div>
             </div>
             <hr />
             <div>
                 <h3>쌩(?) GraphQL Server만들어보기.</h3>
                 <Highlight className='js'>
                     {`
-                        $ root location of project folder
+                        $ ../nodeQL
                         
                             yarn add graphql-yoga
                             mkdir src 
@@ -60,8 +71,13 @@ const template = () => (
 
                         `}
                 </Highlight>
-                <p>
-                    <b>graphql-yoga를 라이브러리를 다운받아줍시다.</b>
+                <div className='para'>
+                    <b>
+                        <a href='https://github.com/prisma/graphql-yoga'>
+                            graphql-yoga
+                        </a>
+                    </b>
+                    를 라이브러리를 다운받아줍시다.
                     <br />이 라이브러리에 대해 설명드리자면, GraphQL 서버의
                     기능을 모두 갖춘 고마운 녀석입니다.
                     <br /> Express.js를 포함한 다른 라이브러리를 기반으로
@@ -86,34 +102,45 @@ const template = () => (
                             작동가능.
                         </li>
                     </ul>
-                    간략하게만 알아보았습니다. 자, 이제 본격적으로 코딩을
-                    해봅시다!
+                    간략하게만 알아보았습니다만, 뭔가 천군만마를 얻은듯 이
+                    라이브러리 하나면 "graphQL은 다 끝났구나" 하는 느낌을 준다고
+                    생각합니다
+                    <br />
+                    자, 그럼 각설하고 이제 본격적으로 코딩을 해봅시다!
                     <Highlight className='js'>
                         {`
-                        $ src/index.js
+    $ src/index.js
 
-                        const { GraphQLServer } = require('graphql-yoga')
+    const { GraphQLServer } = require('graphql-yoga');
 
-                        // 1
-                        const typeDefs = \`
-                        type Query {
-                            info: String!
-                        }
-                        \`
+    // 1
+    const typeDefs = \`
+    type Query {
+    info: String!
+    }
+    \`;
 
-                        // 2
-                        const resolvers = {
-                        Query: {
-                            info: () => \`This is the API of a Hackernews Clone\`
-                        }
-                        }
+    // 2
+    const resolvers = {
+    Query: {
+    info: () => \`this is your first call!\`,
+    },
+    };
 
-                        // 3
-                        const server = new GraphQLServer({
-                            typeDefs,
-                            resolvers,
-                        })
-                        server.start(() => console.log(\`Server is running on http://localhost:4000\`))
+    // 3
+    const server = new GraphQLServer({
+    typeDefs,
+    resolvers,
+    });
+
+    //4
+    const option = {
+    port: 4040,
+    };
+    server.start(option, () =>
+    console.log(\`Server is running on http://localhost:\${option.port}\`),
+    );
+
                         `}
                     </Highlight>
                     처음보는 구조에 당황하실수도있습니다만, 걱정마시고 찬찬히
@@ -123,20 +150,29 @@ const template = () => (
                     1. typeDefs는 변수의 이름 그대로 GraphQL Schema에 대한
                     타입을 정의합니다.
                     <br />
-                    그렇다면 위 코드의 의미는 Query라는 타입을 정의했고,
-                    info라는 field를 가지고있다! 라고 할 수 있습니다.
+                    그렇다면 위 코드의 의미는 "Query라는 타입을 정의했고,
+                    info라는 field를 가지고있다!" 라고 할 수 있습니다.
+                    <br />
+                    그리고 타입뒤에 !는 null이 될 수 없음을 의미합니다!
+                    <br />
                     <br />
                     2. resolovers 객체는 GraphQL Schema의 실제 구현체입니다.
                     <br />
                     구조는 typeDefs와 동일하고 동일해야합니다.
                     <br />
-                    3. 마지막으로 Schema와 Resolver를 GraphQLServer에
-                    전달해줍니다.
                     <br />
-                    이 부분은 서버에 무슨 API 동작을 받아들어야하며, 어떻게
-                    풀어야하는지에 대해 알려줍니다.
+                    3.Schema와 Resolver를 GraphQLServer에 전달해줍니다.
                     <br />
-                    <hr />자 이제 실행시켜봅시다!
+                    <br />
+                    4. option을 넘겨줄 수 있습니다만, 지금은 port만
+                    설정해줍니다.
+                    <br />
+                    해당 소스는 서버에 무슨 API 동작을 받아들어야하며, 어떻게
+                    풀어야(resolve)하는지에 대해 알려줍니다.
+                    <br />
+                    <br />
+                    <hr />
+                    실행시켜봅시다!
                     <Highlight className='js'>
                         {`
                                 $ ../nodeQL/
@@ -146,7 +182,27 @@ const template = () => (
                     localhost:4000으로 접속해보신다면 아래와 같은 화면을 보실 수
                     있습니다. <br />
                     앞서 설명했던 GraphQL Playground(GraphQL IDE)입니다.
-                </p>
+                    <img src={s1} alt='your first query' />
+                    축하합니다! 처음으로 GraphQL 서버도 띄워보고 쿼리까지
+                    날려보았습니다. 아까 타입 뒤에 !가 붙으면 null이 될 수
+                    없다고했었죠? 한번 테스트해봅시다!
+                    <Highlight className='js'>
+                        {`
+// 2
+const resolvers = {
+    Query: {
+        // info: () => \`this is your first call!\`,
+        info: () => null,
+    },
+};
+`}
+                    </Highlight>
+                    기존의 stirng에서 null로 리턴값을 변경했습니다.
+                    <img src={s2} alt='your first query' />
+                    에러 메세지까지 친절하게 노출해줍니다.! <br />
+                    거의 뭐..개발자님 로직만 짜십쇼, 검수는 저한테 맡기시지요!
+                    하는 기분이네요.
+                </div>
             </div>
         </div>
     </Wrapper>
