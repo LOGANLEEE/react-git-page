@@ -1,19 +1,18 @@
 import React from 'react';
-
+import Highlight from 'react-highlight';
 import Wrapper from './Wrapper';
 
 const template = () => (
     <Wrapper>
         <div>
-            <h3>실습</h3>
+            <h3>실습1</h3>
             <p>
                 자, 이제 이론보다는 키보드에 손가락을 한번 올려봅시다. <br />
                 우선 늘 그렇듯이 프로젝트를 생성해줍니다.
             </p>
 
-            <pre>
-                <code className='language-javascript'>
-                    {`
+            <Highlight className='js'>
+                {`
                     mkdir nodeQL
                     cd nodeQL
                     yarn init -y
@@ -26,8 +25,7 @@ const template = () => (
                         "start": "nodemon"
                         }
                 `}
-                </code>
-            </pre>
+            </Highlight>
             <div>
                 <p>
                     패키지 관리자로는 npm 보다는 yarn을 선호하는 편이므로 yarn을
@@ -52,17 +50,16 @@ const template = () => (
             <hr />
             <div>
                 <h3>쌩(?) GraphQL Server만들어보기.</h3>
-                <pre>
-                    <code className='language-javascript'>
-                        {`
+                <Highlight className='js'>
+                    {`
                         $ root location of project folder
+                        
                             yarn add graphql-yoga
                             mkdir src 
                             touch src/index.js
 
                         `}
-                    </code>
-                </pre>
+                </Highlight>
                 <p>
                     <b>graphql-yoga를 라이브러리를 다운받아줍시다.</b>
                     <br />이 라이브러리에 대해 설명드리자면, GraphQL 서버의
@@ -91,9 +88,8 @@ const template = () => (
                     </ul>
                     간략하게만 알아보았습니다. 자, 이제 본격적으로 코딩을
                     해봅시다!
-                    <pre>
-                        <code className='language-javascript'>
-                            {`
+                    <Highlight className='js'>
+                        {`
                         $ src/index.js
 
                         const { GraphQLServer } = require('graphql-yoga')
@@ -119,8 +115,7 @@ const template = () => (
                         })
                         server.start(() => console.log(\`Server is running on http://localhost:4000\`))
                         `}
-                        </code>
-                    </pre>
+                    </Highlight>
                     처음보는 구조에 당황하실수도있습니다만, 걱정마시고 찬찬히
                     하나씩 뜯어봅시다.
                     <br />
@@ -142,14 +137,12 @@ const template = () => (
                     풀어야하는지에 대해 알려줍니다.
                     <br />
                     <hr />자 이제 실행시켜봅시다!
-                    <pre>
-                        <code className='language-javascript'>
-                            {`
+                    <Highlight className='js'>
+                        {`
                                 $ ../nodeQL/
                                 yarn start
                             `}
-                        </code>
-                    </pre>
+                    </Highlight>
                     localhost:4000으로 접속해보신다면 아래와 같은 화면을 보실 수
                     있습니다. <br />
                     앞서 설명했던 GraphQL Playground(GraphQL IDE)입니다.

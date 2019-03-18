@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Prism from 'prismjs';
 
-import './styles/prism.css';
-import './styles/index.css';
-import 'primereact/resources/themes/nova-light/theme.css';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
+// PrimeReact source
+// import 'primereact/resources/themes/nova-light/theme.css';
+// import 'primereact/resources/primereact.min.css';
+// import 'primeicons/primeicons.css';
 
+// HighLight.js
+import 'highlight.js/styles/a11y-dark.css';
 import * as serviceWorker from './serviceWorker';
 import store from './store';
 import Root from './Root';

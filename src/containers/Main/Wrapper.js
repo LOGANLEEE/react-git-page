@@ -4,6 +4,7 @@ const Wrapper = styled.div`
     background-color: black;
     color: white;
     display: grid;
+    padding: 10px;
 
     a {
         text-decoration: none;
@@ -12,17 +13,22 @@ const Wrapper = styled.div`
         color: red;
     }
 
+    li {
+        font-size: 32px;
+        padding: 10px;
+    }
+
     .item1 {
         grid-column: 1;
         grid-row: 1;
     }
     .item2 {
-        grid-column: 2;
-        grid-row: 1;
+        grid-column: 1;
+        grid-row: 2;
     }
     .item3 {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 3;
     }
 `;
 
