@@ -1,19 +1,14 @@
 {
-  "main.css": "/react-git-page/static/css/main.2684ad45.chunk.css",
-  "main.js": "/react-git-page/static/js/main.bb3fc1a6.chunk.js",
-  "main.js.map": "/react-git-page/static/js/main.bb3fc1a6.chunk.js.map",
+  "main.js": "/react-git-page/static/js/main.c570bd6d.chunk.js",
+  "main.js.map": "/react-git-page/static/js/main.c570bd6d.chunk.js.map",
   "runtime~main.js": "/react-git-page/static/js/runtime~main.d066d5f1.js",
   "runtime~main.js.map": "/react-git-page/static/js/runtime~main.d066d5f1.js.map",
-  "static/css/2.63a0770d.chunk.css": "/react-git-page/static/css/2.63a0770d.chunk.css",
-  "static/js/2.7fe37ffe.chunk.js": "/react-git-page/static/js/2.7fe37ffe.chunk.js",
-  "static/js/2.7fe37ffe.chunk.js.map": "/react-git-page/static/js/2.7fe37ffe.chunk.js.map",
+  "static/css/2.c7d45b21.chunk.css": "/react-git-page/static/css/2.c7d45b21.chunk.css",
+  "static/js/2.ac1ba29b.chunk.js": "/react-git-page/static/js/2.ac1ba29b.chunk.js",
+  "static/js/2.ac1ba29b.chunk.js.map": "/react-git-page/static/js/2.ac1ba29b.chunk.js.map",
   "index.html": "/react-git-page/index.html",
-  "precache-manifest.82d86edbb6743b601f0011134b9305c8.js": "/react-git-page/precache-manifest.82d86edbb6743b601f0011134b9305c8.js",
+  "precache-manifest.13a481d914aaf5f4804734e574dca212.js": "/react-git-page/precache-manifest.13a481d914aaf5f4804734e574dca212.js",
   "service-worker.js": "/react-git-page/service-worker.js",
-  "static/css/2.63a0770d.chunk.css.map": "/react-git-page/static/css/2.63a0770d.chunk.css.map",
-  "static/css/main.2684ad45.chunk.css.map": "/react-git-page/static/css/main.2684ad45.chunk.css.map",
-  "static/media/avengers2.png": "/react-git-page/static/media/avengers2.6b3ed490.png",
-  "static/media/primereact.min.css": "/react-git-page/static/media/line.567f5738.gif",
-  "static/media/theme.css": "/react-git-page/static/media/open-sans-v15-latin-regular.cffb686d.woff2",
-  "static/media/primeicons.css": "/react-git-page/static/media/primeicons.b8eccb10.eot"
+  "static/css/2.c7d45b21.chunk.css.map": "/react-git-page/static/css/2.c7d45b21.chunk.css.map",
+  "static/media/avengers2.png": "/react-git-page/static/media/avengers2.6b3ed490.png"
 }
