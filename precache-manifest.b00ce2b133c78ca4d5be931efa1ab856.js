@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "0793e5bd86b238cdd9ad",
-    "url": "/react-git-page/static/js/main.0793e5bd.chunk.js"
+    "revision": "77fbac50663acba7a8ae",
+    "url": "/react-git-page/static/js/main.77fbac50.chunk.js"
   },
   {
     "revision": "d066d5f166b0e1c0b57e",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/media/avengers2.6b3ed490.png"
   },
   {
-    "revision": "650a8d09e691a722c44db2ddcc2e9c4d",
+    "revision": "4ea5aa6cf44e110026ac85a0a8cca4d1",
     "url": "/react-git-page/index.html"
   }
 ];
