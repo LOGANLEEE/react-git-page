@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/react-git-page/static/media/avengers2.6b3ed490.png"
   },
   {
-    "revision": "5caef175c07a9dc02f972d35491e0f67",
+    "revision": "650a8d09e691a722c44db2ddcc2e9c4d",
     "url": "/react-git-page/index.html"
   }
 ];
