@@ -167,8 +167,8 @@ const template = () => (
                     4. option을 넘겨줄 수 있습니다만, 지금은 port만
                     설정해줍니다.
                     <br />
-                    해당 소스는 서버에 무슨 API 동작을 받아들어야하며, 어떻게
-                    풀어야(resolve)하는지에 대해 알려줍니다.
+                    해당 소스는 서버에 무슨 API Operation을 받아들어야하며,
+                    어떻게 풀어야(resolve)하는지에 대해 알려줍니다.
                     <br />
                     <br />
                     <hr />
@@ -197,11 +197,77 @@ const resolvers = {
 };
 `}
                     </Highlight>
-                    기존의 stirng에서 null로 리턴값을 변경했습니다.
+                    기존의 Stirng에서 null로 리턴값을 변경했습니다.
                     <img src={s2} alt='your first query' />
                     에러 메세지까지 친절하게 노출해줍니다.! <br />
-                    거의 뭐..개발자님 로직만 짜십쇼, 검수는 저한테 맡기시지요!
-                    하는 기분이네요.
+                    거의 뭐.."개발자님 로직만 짜십쇼, 검수는 저한테
+                    맡기시지요!"" 하는 기분이지만 이렇기 때문에 graphQL-js의
+                    참조함으로써 graphQL schema는 API Operation과 데이터
+                    설계쪽에서는 항상 100% 신뢰가 보장된다고 할 수 있는
+                    부분입니다.
+                </div>
+                <hr />
+                <hr />
+                <div>
+                    <h3>A word on the GraphQL Schema</h3>
+                    모든 핵심 GraphQL API Operation에는 graphQL Schema가
+                    있습니다.
+                    <br />
+                    그래프큐엘 스키마는 그래프큐엘 에스디엘로 작성되어있습니다.
+                    <br />
+                    "Java, TypeScript,Swift, GO" 처럼 강력히 타입을 지헝해
+                    데이터 구조를 정의할 수 있는 타입 시스템을 말합니다.
+                    <br />
+                    하지만 그래프큐엘 서버를 위한 API 정의에는 무슨 도움이
+                    될까요?
+                    <br />
+                    모든 GraphQL Schema는 <b>Query</b>, <b>Mutation</b>,
+                    <b>Subscription</b>
+                    으로 3가지 특별한 Root 타입을 가지고 있습니다.
+                    <br />
+                    위의 3가지 타입은 GraphQL에서 제공하는 <b>Query</b>,
+                    <b>Mutation</b>,<b>Subscription</b>3가지 Operation 타입에
+                    부합합니다.
+                    <br />
+                    3가지 root 타입들은 root 필드라 불리며 사용가능한 API
+                    Operation을 정의합니다.
+                    <br />
+                    <Highlight className='js'>
+                        {`
+    type Query{
+        info: String!
+    }
+    `}
+                    </Highlight>
+                    위 Schem는 info라고 불리는 단일 root 필드만을
+                    가지고있습니다.
+                    <br />
+                    GraphQL API로
+                    <b>Queries,</b>,<b>Mutations</b>,<b>Subscription</b>
+                    를 보낼 때, 항상 root field로 시작해야합니다. <br />
+                    이런 경우에, 단일 root 필드 밖에 가지고있지않기 때문에
+                    GraphQL API는 딱 하나의 쿼리만을 받아들입니다.
+                    <br />
+                    <br />
+                    자 그럼 이제 조금 더 복잡한 예제를 살펴봅시다.
+                    <Highlight className='js'>
+                        {`
+    type Query {
+        users: [User!]!
+        user(id: ID!): User
+    }
+
+    type Mutation {
+        createUser(name: String!): User!
+    }
+
+    type User {
+        id: ID!
+        name: String!
+    }     
+                        `}
+                    </Highlight>
+                    이 경우에 우리는
                 </div>
             </div>
         </div>
